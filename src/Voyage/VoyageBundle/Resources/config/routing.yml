@@ -1,0 +1,3 @@
+voyage_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: VoyageBundle:Default:index }
