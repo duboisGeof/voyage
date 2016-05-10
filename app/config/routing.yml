@@ -1,7 +1,3 @@
 voyage:
     resource: "@VoyageBundle/Resources/config/routing.yml"
     prefix:   /Voyage/
-
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation

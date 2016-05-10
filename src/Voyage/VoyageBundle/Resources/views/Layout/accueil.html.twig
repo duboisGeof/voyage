@@ -1,0 +1,315 @@
+{% extends "::layout.html.twig" %}
+
+
+{% block body %}
+    <div id="wrapper">
+        <div id="top-line"></div>
+
+        <!-- 960 Container -->
+        <div class="container">
+
+            <!-- Header -->
+            {% block header %}{{ parent() }}{% endblock %}
+            <!-- Header / End -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- 960 Container / End -->
+
+
+        <!-- Navigation
+        ================================================== -->
+        {% block navigation %}{{ parent() }}{% endblock %}
+        <div class="clearfix"></div>
+
+
+        <!-- Content
+        ================================================== -->
+
+
+        <!-- LayerSlider  -->
+        <section id="layerslider-container">	
+            <div id="layerslider" style="width: 1020px; height: 450px; margin: 0 auto;">
+
+                <!-- Slide 1 -->
+                <article class="ls-layer" style="slideDelay: 10000; slidedirection: left;">
+                    <img src="{{ asset('bundles/voyage/images/01.jpg') }}" class="ls-bg" alt="">
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="ls-layer" style="slideDelay: 10000; slidedirection: top;">
+                    <img src="{{ asset('bundles/voyage/images/02.jpg') }}" class="ls-bg">
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="ls-layer" style="slideDelay: 10000; slidedirection: right; ">
+                    <img src="{{ asset('bundles/voyage/images/03.jpg') }}" class="ls-bg">
+                </article>
+
+                <article class="ls-layer" style="slideDelay: 10000; slidedirection: bottom;">
+                    <img src="{{ asset('bundles/voyage/images/04.jpg') }}" class="ls-bg">
+                </article>
+
+            </div>					
+        </section>
+        <div class="clearfix"></div>
+        <!-- LayerSlider / End -->
+
+
+        <!-- 960 Container -->
+        <div class="container">
+
+            <!-- Icon Boxes -->
+
+
+            <form role="form" id="" action="" method="post">
+                <h3>Rechercher votre séjour</h3><hr>
+
+
+                <div class="form-group">
+                    <label for="depart">Au départ de : </label>
+                    <select class="form-control" name="category">
+                        <option value="">Paris</option>
+                        <option value="0">Marseille</option>
+                        <option value="1">Bordeaux</option>
+                        <option value="2">Lille</option>
+                    </select>           
+                </div>
+
+
+                <div class="form-group">
+                    <label for="arrivé">Destination : </label>
+                    <select class="form-control" name="category">
+                        <option value="">New-York</option>
+                        <option value="0">Tokyo</option>
+                        <option value="1">Montreal</option>
+                        <option value="2">Le Caire</option>
+                    </select>           
+                </div>
+
+                <div class="form-group">
+                    <label for="date_debut">Du :</label>
+                    <input class="form-control" type="date" max="2017-12-31" min="2015-01-01" name="date_debut">
+                </div>
+
+                <div class="form-group">
+                    <label for="date_fin">Au :</label>
+                    <input class="form-control" type="date" max="2012-06-25" min="2011-08-13" name="date_fin">
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <label for="duree">Durée :</label>
+                    <input type="text" class="form-control" id="duree" placeholder="Durée">
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="prix">Budget:</label>
+                    <input type="text" class="form-control" id="prix" placeholder="Votre Budget">
+                </div>
+
+
+                <br>
+                <button type="submit" class="btn btn-success">Rechercher</button>
+
+            </form>
+
+            <div class="clearfix"></div>
+
+            <!-- -->
+
+        </div>
+        <!-- 960 Container / End 
+        
+        
+          <div class="slide">
+               
+                                <img src="{{ asset('bundles/voyage/images/04.jpg') }}" alt="basketball" width="140" height="140" />
+                     
+                            <span class="info">lol</span>
+                        </div>
+        
+        
+        
+        -->
+
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+
+
+                <h3>Nos promotions</h3>
+                <div class="carrousel" id="big_carrousel">
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                        <div class="info">
+                            <h5>Information pays</h5>
+                            <a href="#">Lien promotion</a>
+                            <p>prix promotion<span class="prix">1500€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                        <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                        <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+                    <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+                </div>
+                        
+                        <div id="pagination"></div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+
+
+       <div class="container floated grey ">
+            <div class="blank floated grey">
+
+
+                <h3>Top 3 des ventes</h3>
+                
+                     <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+                        
+                         <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+                        
+                         <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        
+         <div class="container floated grey ">
+            <div class="blank floated grey">
+
+
+                <h3>Nouveautés</h3>
+              
+                   
+                     <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+                        
+                         <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+                        
+                         <div class="lol">
+                        <a href="#">
+                            <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                        </a>
+                         <div class="info">info</div>
+                    </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Content / End -->
+
+</div>
+<!-- Wrapper / End -->
+
+
+
+{% endblock %}

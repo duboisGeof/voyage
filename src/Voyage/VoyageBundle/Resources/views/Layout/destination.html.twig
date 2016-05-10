@@ -1,0 +1,426 @@
+{% extends "::layout.html.twig" %}
+
+
+{% block body %}
+    <div id="wrapper">
+        <div id="top-line"></div>
+
+        <!-- 960 Container -->
+        <div class="container">
+
+            <!-- Header -->
+            {% block header %}{{ parent() }}{% endblock %}
+            <!-- Header / End -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- 960 Container / End -->
+
+
+        <!-- Navigation
+        ================================================== -->
+        {% block navigation %}{{ parent() }}{% endblock %}
+        <div class="clearfix"></div>
+
+
+        <!-- Content
+        ================================================== -->
+
+
+        <!-- LayerSlider  -->
+        <div class="map">
+            <img src="{{ asset('bundles/voyage/images/map.jpg') }}" alt="basketball" usemap="#Map" />
+            <map name="Map">
+                <area shape="rect" coords="69,121,190,139" href="#" alt="amerique_nord" id="amerique_nord">
+                <area shape="rect" coords="0,202,130,223" href="#" alt="amerique_centrale" id="amerique_centrale">
+                <area shape="rect" coords="196,164,261,183" href="#" alt="caraibes" id="caraibes">
+                <area shape="rect" coords="178,267,289,288" href="#" alt="amerique_sud" id="amerique_sud">
+                <area shape="rect" coords="454,202,511,222" href="#" alt="afrique" id="afrique">
+                <area shape="rect" coords="506,154,601,174" href="#" alt="moyen_orient" id="moyen_orient">
+                <area shape="rect" coords="460,69,514,90" href="#" alt="europe" id="europe">
+                <area shape="rect" coords="687,121,720,140" href="#" alt="asie" id="asie" onmouseover="this.src='../images/asie.png';">
+                <area shape="rect" coords="795,319,852,338" href="#" alt="oceanie" id="oceanie">
+            </map>
+        </div>
+        <div class="clearfix"></div>
+        <!-- LayerSlider / End -->
+
+
+        <!-- 960 Container -->
+        <div class="container">
+
+            <!-- Icon Boxes -->
+
+
+            <form role="form" id="" action="" method="post">
+                <h3>Rechercher votre séjour</h3><hr>
+
+
+                <div class="form-group">
+                    <label for="depart">Au départ de : </label>
+                    <select class="form-control" name="category">
+                        <option value="">Paris</option>
+                        <option value="0">Marseille</option>
+                        <option value="1">Bordeaux</option>
+                        <option value="2">Lille</option>
+                    </select>           
+                </div>
+
+
+                <div class="form-group">
+                    <label for="arrivé">Destination : </label>
+                    <select class="form-control" name="category">
+                        <option value="">New-York</option>
+                        <option value="0">Tokyo</option>
+                        <option value="1">Montreal</option>
+                        <option value="2">Le Caire</option>
+                    </select>           
+                </div>
+
+                <div class="form-group">
+                    <label for="date_debut">Du :</label>
+                    <input class="form-control" type="date" max="2017-12-31" min="2015-01-01" name="date_debut">
+                </div>
+
+                <div class="form-group">
+                    <label for="date_fin">Au :</label>
+                    <input class="form-control" type="date" max="2012-06-25" min="2011-08-13" name="date_fin">
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <label for="duree">Durée :</label>
+                    <input type="text" class="form-control" id="duree" placeholder="Durée">
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="prix">Budget:</label>
+                    <input type="text" class="form-control" id="prix" placeholder="Votre Budget">
+                </div>
+
+
+                <br>
+                <button type="submit" class="btn btn-success">Rechercher</button>
+
+            </form>
+
+            <div class="clearfix"></div>
+
+            <!-- -->
+
+        </div>
+
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Amerique du Nord</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+
+
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Amerique Centrale</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Amerique du Sud</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+                    
+                    
+
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Caraibes</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Afrique</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Europe</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Moyen Orient</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Asie</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="container floated grey ">
+            <div class="blank floated grey">
+                <h3 class="text-left ">Oceanie</h3> 
+
+                <div class="description">
+                    <p class="text-justify">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+                <div class="lol">
+                    <a href="#">
+                        <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />
+                    </a>
+                    <div class="info">info</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Content / End -->
+
+</div>
+<!-- Wrapper / End -->
+
+
+
+{% endblock %}

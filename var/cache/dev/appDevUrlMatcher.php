@@ -100,18 +100,44 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // voyage_homepage
-        if (0 === strpos($pathinfo, '/Voyage/hello') && preg_match('#^/Voyage/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'voyage_homepage')), array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\DefaultController::indexAction',));
-        }
+        if (0 === strpos($pathinfo, '/Voyage')) {
+            // Voyage_accueil
+            if (rtrim($pathinfo, '/') === '/Voyage') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'Voyage_accueil');
+                }
 
-        // homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'homepage');
+                return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\AccueilController::accueilAction',  '_route' => 'Voyage_accueil',);
             }
 
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+            // Voyage_destination
+            if ($pathinfo === '/Voyage/destination') {
+                return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\DestinationController::destinationAction',  '_route' => 'Voyage_destination',);
+            }
+
+            // Voyage_circuit
+            if ($pathinfo === '/Voyage/circuit') {
+                return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\CircuitController::circuitAction',  '_route' => 'Voyage_circuit',);
+            }
+
+            if (0 === strpos($pathinfo, '/Voyage/s')) {
+                // Voyage_sejour
+                if ($pathinfo === '/Voyage/sejour') {
+                    return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\SejourController::sejourAction',  '_route' => 'Voyage_sejour',);
+                }
+
+                // Voyage_single
+                if ($pathinfo === '/Voyage/single') {
+                    return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\SingleController::singleAction',  '_route' => 'Voyage_single',);
+                }
+
+            }
+
+            // Voyage_contact
+            if ($pathinfo === '/Voyage/contact') {
+                return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\ContactController::contactAction',  '_route' => 'Voyage_contact',);
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

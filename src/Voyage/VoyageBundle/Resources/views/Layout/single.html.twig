@@ -1,0 +1,160 @@
+{% extends "::layout.html.twig" %}
+
+
+{% block body %}
+    <div id="wrapper">
+        <div id="top-line"></div>
+
+        <!-- 960 Container -->
+        <div class="container">
+
+            <!-- Header -->
+            {% block header %}{{ parent() }}{% endblock %}
+            <!-- Header / End -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- 960 Container / End -->
+
+
+        <!-- Navigation
+        ================================================== -->
+        {% block navigation %}{{ parent() }}{% endblock %}
+        <div class="clearfix"></div>
+
+
+        <!-- Content
+        ================================================== -->
+        <div id="content">
+
+            <!-- 960 Container -->
+            <div class="container floated">
+
+                <div class="sixteen floated page-title">
+
+                    <h2>American Football <span>/ Single Project</span></h2>
+
+                    <!-- Portfolio Navi -->
+                    <div id="portfolio-navi">
+                        <ul>
+                            <li><a class="prev" href="#"><b>←</b> Previous</a></li>
+                            <li><a class="next" href="#">Next <b>→</b></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+            <!-- 960 Container / End -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+
+                <div class="container">
+                    <div class="sixteen columns">
+                        <div class='carrousel' id='single_carrousel'>
+
+
+                            <a href="#">
+                                <a href="{{ asset('bundles/voyage/images/vacance/01.jpeg') }}" rel="fancybox-gallery" title="American Football"><img src="{{ asset('bundles/voyage/images/vacance/01.jpeg') }}" alt="" /></a>                                </a>
+                            <a href="#">
+                                <a href="{{ asset('bundles/voyage/images/vacance/02.jpg') }}" rel="fancybox-gallery" title="American Football"><img src="{{ asset('bundles/voyage/images/vacance/02.jpg') }}" alt="" /></a>                                </a>
+                            </a>
+
+
+
+                            <div class="clearfix"></div>
+                            <!-- Slider / End -->
+                        </div>
+                            <a class="prev2" id="foo2_prev" href="#"><span>&nbsp;</span></a>
+                            <a class="next2" id="foo2_next" href="#"><span>&nbsp;</span></a>
+                        <div id="pagination"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- 960 Container -->
+                <div class="container" style="margin-top: 30px;">
+
+                    <div class="twelve columns">
+                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id ultricies vehicula ut id elit. Integer posuere erat ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur cras mattis consectetur purus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum idea ligula felis euismod semper. Donec lorem ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam. Pellentesque lore ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. </p>
+                    </div>
+
+                    <div class="four columns">
+                        <div class="project-info-container">
+                            <ul class="project-info">
+                                <li><strong>Client:</strong> Google</li>
+                                <li><strong>Date:</strong> December 2012</li>
+                                <li><a href="#" class="button color launch"> View Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End 960 Container -->
+
+
+                <div class="line" style="margin: 20px 0 37px 0;"></div>
+
+                <!-- Related Works -->
+                <div class="related-works">
+
+                    <!-- 960 Container -->
+                    <div class="container" style="margin-bottom: -10px;">
+
+                        <div class="sixteen columns">
+                            <h3 class="margin">Idée de vacance</h3>
+                        </div>
+
+                        <div class="lol">
+                            <a href="#">
+                                <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                            </a>
+                            <div class="info">info</div>
+                        </div>
+
+                        <div class="lol">
+                            <a href="#">
+                                <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                            </a>
+                            <div class="info">info</div>
+                        </div>
+
+                        <!-- 1/4 Column -->
+                        <div class="lol">
+                            <a href="#">
+                                <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />
+                            </a>
+                            <div class="info">info</div>
+                        </div>                        
+                    </div>
+                    <!-- End 960 Container -->
+
+                </div>
+                <!-- Related Works / End -->
+
+            </div>
+            <!-- Page Content / End -->
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <!-- Content / End -->
+
+</div>
+<!-- Wrapper / End -->
+
+
+
+<!-- Footer Bottom / End -->
+{% endblock %}

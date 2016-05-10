@@ -1,3 +1,23 @@
-voyage_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: VoyageBundle:Default:index }
+Voyage_accueil:
+    path: /
+    defaults: { _controller: VoyageBundle:Accueil:accueil }
+    
+Voyage_destination:
+    path: /destination
+    defaults: { _controller: VoyageBundle:Destination:destination }
+    
+Voyage_circuit:
+    path: /circuit
+    defaults: { _controller: VoyageBundle:Circuit:circuit }
+    
+Voyage_sejour:
+    path: /sejour
+    defaults: { _controller: VoyageBundle:Sejour:sejour }
+    
+Voyage_single:
+    path: /single
+    defaults: { _controller: VoyageBundle:Single:single }
+    
+Voyage_contact:
+    path: /contact
+    defaults: { _controller: VoyageBundle:Contact:contact }
