@@ -21,3 +21,7 @@ Voyage_single:
 Voyage_contact:
     path: /contact
     defaults: { _controller: VoyageBundle:Contact:contact }
+    
+Voyage_search:
+    path: /search
+    defaults: { _controller: VoyageBundle:Search:search }

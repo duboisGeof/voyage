@@ -23,403 +23,353 @@ class __TwigTemplate_68cfc8fb079e19c9d8044be7d993cbe4406b630399ced7c2d396c702ad3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a74af6e640321e6e65f3e429b5c21cb1081497505a5983465c1a8550525dde92 = $this->env->getExtension("native_profiler");
-        $__internal_a74af6e640321e6e65f3e429b5c21cb1081497505a5983465c1a8550525dde92->enter($__internal_a74af6e640321e6e65f3e429b5c21cb1081497505a5983465c1a8550525dde92_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VoyageBundle:Layout:sejour.html.twig"));
+        $__internal_30c43e21306483eb88ba6edc7b4d731593ac8de6787f0ee14a4dd3d9e940c11c = $this->env->getExtension("native_profiler");
+        $__internal_30c43e21306483eb88ba6edc7b4d731593ac8de6787f0ee14a4dd3d9e940c11c->enter($__internal_30c43e21306483eb88ba6edc7b4d731593ac8de6787f0ee14a4dd3d9e940c11c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VoyageBundle:Layout:sejour.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a74af6e640321e6e65f3e429b5c21cb1081497505a5983465c1a8550525dde92->leave($__internal_a74af6e640321e6e65f3e429b5c21cb1081497505a5983465c1a8550525dde92_prof);
+        $__internal_30c43e21306483eb88ba6edc7b4d731593ac8de6787f0ee14a4dd3d9e940c11c->leave($__internal_30c43e21306483eb88ba6edc7b4d731593ac8de6787f0ee14a4dd3d9e940c11c_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_3bd3eb3fc2d13d6f4b849f4ba591a802f17813e41c09eca6ae59b44d11ec9ab7 = $this->env->getExtension("native_profiler");
-        $__internal_3bd3eb3fc2d13d6f4b849f4ba591a802f17813e41c09eca6ae59b44d11ec9ab7->enter($__internal_3bd3eb3fc2d13d6f4b849f4ba591a802f17813e41c09eca6ae59b44d11ec9ab7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_558699be1068790563f20f4334537de1ffb99e4aa156860c8524c40581a9a4db = $this->env->getExtension("native_profiler");
+        $__internal_558699be1068790563f20f4334537de1ffb99e4aa156860c8524c40581a9a4db->enter($__internal_558699be1068790563f20f4334537de1ffb99e4aa156860c8524c40581a9a4db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
-        echo "<div id=\"wrapper\">
+        echo "    <div id=\"wrapper\">
+        <div id=\"top-line\"></div>
 
-<!-- Header
-================================================== -->
-<div id=\"top-line\"></div>
+        <!-- 960 Container -->
+        <div class=\"container\">
 
-<!-- 960 Container -->
-<div class=\"container\">
-
-\t<!-- Header -->
-\t";
-        // line 15
+            <!-- Header -->
+            ";
+        // line 12
         $this->displayBlock('header', $context, $blocks);
-        // line 16
-        echo "\t<!-- Header / End -->
+        // line 13
+        echo "            <!-- Header / End -->
 
-\t<div class=\"clearfix\"></div>
+            <div class=\"clearfix\"></div>
 
-</div>
-<!-- 960 Container / End -->
+        </div>
+        <!-- 960 Container / End -->
 
 
-<!-- Navigation
-================================================== -->
-";
-        // line 26
+        <!-- Navigation
+        ================================================== -->
+        ";
+        // line 23
         $this->displayBlock('navigation', $context, $blocks);
-        // line 27
-        echo "<div class=\"clearfix\"></div>
+        // line 24
+        echo "        <div class=\"clearfix\"></div>
+
+
+        <!-- Content
+        ================================================== -->
+
+
+        <!-- LayerSlider  -->
+        <div class=\"map\">
+            <img src=\"";
+        // line 33
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/bg_circuit.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" usemap=\"#Map\" />
+        </div>
+        <div class=\"clearfix\"></div>
+        <!-- LayerSlider / End -->
+
+
+        <!-- 960 Container -->
+        <div class=\"container\">
+
+            <!-- Icon Boxes -->
+
+
+            <form role=\"form\" id=\"\" action=\"\" method=\"post\">
+                <h3>Rechercher votre séjour</h3><hr>
+
+
+                <div class=\"form-group\">
+                    <label for=\"depart\">Au départ de : </label>
+                    <select class=\"form-control\" name=\"category\">
+                        <option value=\"\">Paris</option>
+                        <option value=\"0\">Marseille</option>
+                        <option value=\"1\">Bordeaux</option>
+                        <option value=\"2\">Lille</option>
+                    </select>           
+                </div>
+
+
+                <div class=\"form-group\">
+                    <label for=\"arrivé\">Destination : </label>
+                    <select class=\"form-control\" name=\"category\">
+                        <option value=\"\">New-York</option>
+                        <option value=\"0\">Tokyo</option>
+                        <option value=\"1\">Montreal</option>
+                        <option value=\"2\">Le Caire</option>
+                    </select>           
+                </div>
+
+                <div class=\"form-group\">
+                    <label for=\"date_debut\">Du :</label>
+                    <input class=\"form-control\" type=\"date\" max=\"2017-12-31\" min=\"2015-01-01\" name=\"date_debut\">
+                </div>
+
+                <div class=\"form-group\">
+                    <label for=\"date_fin\">Au :</label>
+                    <input class=\"form-control\" type=\"date\" max=\"2012-06-25\" min=\"2011-08-13\" name=\"date_fin\">
+                </div>
 
 
 
-<!-- Content
-================================================== -->
-<div id=\"content\">
+
+                <div class=\"form-group\">
+                    <label for=\"duree\">Durée :</label>
+                    <input type=\"text\" class=\"form-control\" id=\"duree\" placeholder=\"Durée\">
+                </div>
 
 
-<!-- 960 Container -->
-<div class=\"container floated\">
 
-\t<div class=\"sixteen floated page-title\">
-
-\t\t<h2>Our Blog</h2>
-
-\t\t<nav id=\"breadcrumbs\">
-\t\t\t<ul>
-\t\t\t\t<li>You are here:</li>
-\t\t\t\t<li><a href=\"#\">Home</a></li>
-\t\t\t\t<li>Blog</li>
-\t\t\t</ul>
-\t\t</nav>
-
-\t</div>
-
-</div>
-<!-- 960 Container / End -->
+                <div class=\"form-group\">
+                    <label for=\"prix\">Budget:</label>
+                    <input type=\"text\" class=\"form-control\" id=\"prix\" placeholder=\"Votre Budget\">
+                </div>
 
 
-<!-- 960 Container -->
-<div class=\"container floated\">
+                <br>
+                <button type=\"submit\" class=\"btn btn-success\">Rechercher</button>
 
-\t<!-- Page Content -->
-\t<div class=\"eleven floated\">
+            </form>
 
-\t\t<!-- Post -->
-\t\t<article class=\"post\">
+            <div class=\"clearfix\"></div>
 
-\t\t\t<figure class=\"post-img\">
-\t\t\t\t<a href=\"blog-post.html\"><img  src=\"";
-        // line 67
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/blog-01.jpg"), "html", null, true);
-        echo "\"  alt=\"\" /></a>
-                               
-\t\t\t</figure>
-\t\t\t
-\t\t\t<section class=\"date\">
-\t\t\t\t<span class=\"day\">28</span>
-\t\t\t\t<span class=\"month\">Dec</span>
-\t\t\t</section>
-\t\t\t
-\t\t\t<section class=\"post-content\">
+            <!-- -->
 
-\t\t\t\t<header class=\"meta\">
-\t\t\t\t\t<h2><a href=\"blog-post.html\">The Boating Life Begins With a Good Storm</a></h2>
-\t\t\t\t\t<span><i class=\"halflings user\"></i>By <a href=\"#\">admin</a></span>
-\t\t\t\t\t<span><i class=\"halflings tag\"></i><a href=\"#\">Boating</a>, <a href=\"#\">Recreation</a></span>
-\t\t\t\t\t<span><i class=\"halflings comments\"></i>With <a href=\"#\">12 Comments</a></span>
-\t\t\t\t</header>
+        </div>
 
-\t\t\t\t<p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim.</p>
+        <div class=\"container floated grey big_container\">
+            <div class=\"blank floated grey\">
+                <h3 class=\"text-left \">Nos Meilleurs Circuits</h3> 
 
-\t\t\t\t<a href=\"blog-post.html\" class=\"button color\">Read More</a>
-\t\t\t
-\t\t\t</section>
+                <div class=\"description\">
+                    <p class=\"text-justify\">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
 
-\t\t</article>
+                <div class=\"vignette\">
+                    <a href=\"#\">
+                        <img src=\"";
+        // line 119
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                    </a>
+                    <div class=\"info\">
+                        <h5>Information pays</h5>
+                        <a href=\"#\">Lien promotion</a>
+                        <p>prix promotion<span class=\"prix\">1500€</span></p>
+                    </div>
+                </div>
+                <div class=\"vignette\">
+                    <a href=\"#\">
+                        <img src=\"";
+        // line 129
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                    </a>
+                    <div class=\"info\">
+                        <h5>Information pays</h5>
+                        <a href=\"#\">Lien promotion</a>
+                        <p>prix promotion<span class=\"prix\">1500€</span></p>
+                    </div>
+                </div>
+                <div class=\"vignette\">
+                    <a href=\"#\">
+                        <img src=\"";
+        // line 139
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                    </a>
+                    <div class=\"info\">
+                        <h5>Information pays</h5>
+                        <a href=\"#\">Lien promotion</a>
+                        <p>prix promotion<span class=\"prix\">1500€</span></p>
+                    </div>
+                </div>
 
+                <div class=\"vignette margin-top\">
+                    <a href=\"#\">
+                        <img src=\"";
+        // line 150
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                    </a>
+                    <div class=\"info\">
+                        <h5>Information pays</h5>
+                        <a href=\"#\">Lien promotion</a>
+                        <p>prix promotion<span class=\"prix\">1500€</span></p>
+                    </div>
+                </div>
 
-\t\t<!-- Divider -->
-\t\t<div class=\"line\"></div>
+                <div class=\"vignette margin-top\">
+                    <a href=\"#\">
+                        <img src=\"";
+        // line 161
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                    </a>
+                    <div class=\"info\">
+                        <h5>Information pays</h5>
+                        <a href=\"#\">Lien promotion</a>
+                        <p>prix promotion<span class=\"prix\">1500€</span></p>
+                    </div>
+                </div>
 
+                <div class=\"vignette margin-top\">
+                    <a href=\"#\">
+                        <img src=\"";
+        // line 172
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                    </a>
+                    <div class=\"info\">
+                        <h5>Information pays</h5>
+                        <a href=\"#\">Lien promotion</a>
+                        <p>prix promotion<span class=\"prix\">1500€</span></p>
+                    </div>
+                </div>
 
-\t\t
+            </div>
 
-\t\t
-
-\t\t<!-- Pagination -->
-\t\t<nav class=\"pagination\">
-\t\t\t<ul>
-\t\t\t\t<li><a href=\"#\" class=\"current\">1</a></li>
-\t\t\t\t<li><a href=\"#\">2</a></li>
-\t\t\t\t<li><a href=\"#\">Next</a></li>
-\t\t\t</ul>
-\t\t\t<div class=\"clearfix\"></div>
-\t\t</nav>
-
-\t</div>
-\t<!-- Content / End -->
-
-
-\t<!-- Sidebar -->
-\t<div class=\"four floated sidebar right\">
-\t\t<aside class=\"sidebar\">
-
-\t\t\t<!-- Search -->
-\t\t\t<nav class=\"widget-search\">
-\t\t\t\t<form action=\"http://vasterad.com/themes/nevia/404-page.html\" method=\"get\">
-\t\t\t\t\t<button class=\"search-btn-widget\"></button>
-\t\t\t\t\t<input class=\"search-field\" type=\"text\" onblur=\"if(this.value=='')this.value='Search';\" onfocus=\"if(this.value=='Search')this.value='';\" value=\"Search\" />
-\t\t\t\t</form>
-\t\t\t</nav>
-\t\t\t<div class=\"clearfix\"></div>
-
-\t\t\t<!-- Categories -->
-\t\t\t<nav class=\"widget\">
-\t\t\t\t<h4>Categories</h4>
-\t\t\t\t<ul class=\"categories\">
-\t\t\t\t\t<li><a href=\"#\">Business</a></li>
-\t\t\t\t\t<li><a href=\"#\">Entertainment</a></li>
-\t\t\t\t\t<li><a href=\"#\">News & Politics</a></li>
-\t\t\t\t\t<li><a href=\"#\">Social Media</a></li>
-\t\t\t\t\t<li><a href=\"#\">Technology</a></li>
-\t\t\t\t</ul>
-\t\t\t</nav>
-
-\t\t\t<!-- Tags -->
-\t\t\t<div class=\"widget\">
-\t\t\t\t<h4>Tags</h4>
-\t\t\t\t<nav class=\"tags\">
-\t\t\t\t\t<a href=\"#\">Mountains</a>
-\t\t\t\t\t<a href=\"#\">Winter Sports</a>
-\t\t\t\t\t<a href=\"#\">Boating</a>
-\t\t\t\t\t<a href=\"#\">Recreation</a>
-\t\t\t\t\t<a href=\"#\">Skiing</a>
-\t\t\t\t\t<a href=\"#\">Tourism</a>
-\t\t\t\t\t<a href=\"#\">Nature</a>
-\t\t\t\t\t<a href=\"#\">Alps</a>
-\t\t\t\t</nav>
-\t\t\t</div>
-
-\t\t\t<!-- Archives -->
-\t\t\t<nav class=\"widget\">
-\t\t\t\t<h4>Archives</h4>
-\t\t\t\t<ul class=\"categories\">
-\t\t\t\t\t<li><a href=\"#\">October 2012</a></li>
-\t\t\t\t\t<li><a href=\"#\">November 2012</a></li>
-\t\t\t\t\t<li><a href=\"#\">December 2012</a></li>
-\t\t\t\t</ul>
-\t\t\t</nav>
-
-\t\t\t<!-- Tweets-->
-\t\t\t<div class=\"widget\">
-\t\t\t\t<h4>Twitter</h4>
-\t\t\t\t<ul id=\"twitter-blog\"></ul>
-\t\t\t\t\t<script type=\"text/javascript\">
-\t\t\t\t\t\tjQuery(document).ready(function(\$){
-\t\t\t\t\t\t\$.getJSON('http://api.twitter.com/1/statuses/user_timeline/purethemes.json?count=2&amp;callback=?', function(tweets){
-\t\t\t\t\t\t\$(\"#twitter-blog\").html(tz_format_twitter(tweets));
-\t\t\t\t\t\t}); });
-\t\t\t\t\t</script>
-\t\t\t\t<div class=\"clearfix\"></div>
-\t\t\t</div>
+        </div>
+        <div class=\"clearfix\"></div>
 
 
-\t\t</aside>
-\t</div>
-\t<!-- Page Content / End -->
+        <div class=\"container floated grey \">
+            <div class=\"blank floated grey\">
+                <h3 class=\"text-left \">Amerique Centrale</h3> 
 
-</div>
-<!-- 960 Container / End -->
+                <div class=\"description\">
+                    <p class=\"text-justify\">
+                        Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.
+                    </p>
+                </div>
+                <div class=\"block_vignette\">
+                    <div class=\"vignette four\">
+                        <a href=\"#\">
+                            <img src=\"";
+        // line 199
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                        </a>
+                        <div class=\"info\">
+                            <h5>Amérique</h5>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                        </div>
+                    </div>
+                    <div class=\"vignette four\">
+                        <a href=\"#\">
+                            <img src=\"";
+        // line 210
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                        </a>
+                        <div class=\"info\">
+                            <h5>Europe</h5>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                        </div>
+                    </div>
+                    <div class=\"vignette four \">
+                        <a href=\"#\">
+                            <img src=\"";
+        // line 221
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                        </a>
+                        <div class=\"info\">
+                            <h5>Afrique</h5>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                        </div>
+                    </div>
 
-</div>
-<!-- Content / End -->
+                    <div class=\"vignette four \">
+                        <a href=\"#\">
+                            <img src=\"";
+        // line 233
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/01.jpg"), "html", null, true);
+        echo "\" alt=\"basketball\" width=\"140\" height=\"140\" />
+                        </a>
+                        <div class=\"info\">
+                            <h5>Asie / Océanie</h5>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                            <a href=\"#\">Lien promotion</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class=\"clearfix\"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- Content / End -->
 
 </div>
 <!-- Wrapper / End -->
 
 
-<!-- Footer
-================================================== -->
 
-<!-- Footer / Start -->
-<footer id=\"footer\">
-\t<!-- 960 Container -->
-\t<div class=\"container\">
-
-\t\t<!-- About -->
-\t\t<div class=\"four columns\">
-\t\t\t<img id=\"logo-footer\"   src=\"";
-        // line 204
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/images/logo-footer.png"), "html", null, true);
-        echo "\"  alt=\"\" />
-                       
-\t\t\t<p>Morbi gravida imperdiet rutrum fusce mattis, lectus consequat vestibulum, duinibh fermentum ligula.</p>
-\t\t</div>
-
-\t\t<!-- Contact Details -->
-\t\t<div class=\"four columns\">
-\t\t\t<h4>Contact Details</h4>
-\t\t\t<ul class=\"contact-details-alt\">
-\t\t\t\t<li><i class=\"halflings white map-marker\"></i> <p><strong>Address:</strong> 123 Seward Street, Oklahoma City, USA</p></li>
-\t\t\t\t<li><i class=\"halflings white user\"></i> <p><strong>Phone:</strong> +48 880 440 110</p></li>
-\t\t\t\t<li><i class=\"halflings white envelope\"></i> <p><strong>Email:</strong> <a href=\"#\">mail@example.com</a></p></li>
-\t\t\t</ul>
-\t\t</div>
-
-\t\t<!-- Photo Stream -->
-\t\t<div class=\"four columns\">
-\t\t\t<h4>Photo Stream</h4>
-\t\t\t<div class=\"flickr-widget\">
-\t\t\t\t<script type=\"text/javascript\" src=\"http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=48035108@N07\"></script>
-\t\t\t\t<div class=\"clearfix\"></div>
-\t\t\t</div>
-\t\t</div>
-
-\t\t<!-- Twitter -->
-\t\t<div class=\"four columns\">
-\t\t\t<h4>Twitter</h4>
-\t\t\t<ul id=\"twitter\"></ul>
-\t\t\t\t<script type=\"text/javascript\">
-\t\t\t\t\tjQuery(document).ready(function(\$){
-\t\t\t\t\t\$.getJSON('http://api.twitter.com/1/statuses/user_timeline/vasterad.json?count=1&amp;callback=?', function(tweets){
-\t\t\t\t\t\$(\"#twitter\").html(tz_format_twitter(tweets));
-\t\t\t\t\t}); });
-\t\t\t\t</script>
-\t\t\t<div class=\"clearfix\"></div>
-\t\t</div>
-
-\t</div>
-\t<!-- 960 Container / End -->
-
-</footer>
-<!-- Footer / End -->
-
-
-<!-- Footer Bottom / Start  -->
-<footer id=\"footer-bottom\">
-
-\t<!-- 960 Container -->
-\t<div class=\"container\">
-
-\t\t<!-- Copyrights -->
-\t\t<div class=\"eight columns\">
-\t\t\t<div class=\"copyright\">
-\t\t\t\t© Copyright 2012 by <a href=\"#\">Nevia</a>. All Rights Reserved.
-\t\t\t</div>
-\t\t</div>
-
-\t\t<!-- Menu -->
-\t\t<div class=\"eight columns\">
-\t\t\t<nav id=\"sub-menu\">
-\t\t\t\t<ul>
-\t\t\t\t\t<li><a href=\"#\">FAQ's</a></li>
-\t\t\t\t\t<li><a href=\"#\">Sitemap</a></li>
-\t\t\t\t\t<li><a href=\"#\">Contact</a></li>
-\t\t\t\t</ul>
-\t\t\t</nav>
-\t\t</div>
-
-\t</div>
-\t<!-- 960 Container / End -->
-
-</footer>
-<!-- Footer Bottom / End -->
-
-
-<!-- Style Switcher
-================================================== -->
- <link href=\"";
-        // line 281
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/css/switcher.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
- <script src=\"";
-        // line 282
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/voyage/scripts/switcher.js"), "html", null, true);
-        echo "\" rel=\"javascript\"></script>
-
-<section id=\"style-switcher\">
-\t<h2>Style Switcher <a href=\"#\"></a></h2>
-\t<div>
-\t<h3>Predefined Colors</h3>
-\t\t<ul class=\"colors\" id=\"color1\">
-\t\t\t<li><a href=\"#\" class=\"blue\" title=\"Blue\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"green\" title=\"Green\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"orange\" title=\"Orange\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"navy\" title=\"Navy\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"yellow\" title=\"Yellow\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"peach\" title=\"Peach\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"beige\" title=\"Beige\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"purple\" title=\"Purple\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"red\" title=\"Red\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"pink\" title=\"Pink\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"celadon\" title=\"Celadon\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"brown\" title=\"Brown\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"cherry\" title=\"Cherry\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"gray\" title=\"Gray\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"dark\" title=\"Dark\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"cyan\" title=\"Cyan\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"olive\" title=\"Olive\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"dirty-green\" title=\"Dirty Green\"></a></li>
-\t\t</ul>
-\t\t
-\t<h3>Menu Style</h3>
-\t<select id=\"menu-style\">
-\t\t<option value=\"1\">Style 1</option>
-\t\t<option value=\"2\">Style 2</option>
-\t</select>
-
-\t<h3>Background Image</h3>
-\t\t <ul class=\"colors bg\" id=\"bg\">
-\t\t\t<li><a href=\"#\" class=\"bg1\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg2\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg3\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg4\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg5\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg6\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg7\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg8\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg9\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg10\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg11\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg12\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg13\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg14\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg15\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg16\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg17\"></a></li>
-\t\t\t<li><a href=\"#\" class=\"bg18\"></a></li>
-\t\t</ul>
-\t</div>
-
-\t<div id=\"reset\"><a href=\"#\" class=\"button color blue\">Reset</a></div>
-
-</section>
-  ";
+";
         
-        $__internal_3bd3eb3fc2d13d6f4b849f4ba591a802f17813e41c09eca6ae59b44d11ec9ab7->leave($__internal_3bd3eb3fc2d13d6f4b849f4ba591a802f17813e41c09eca6ae59b44d11ec9ab7_prof);
+        $__internal_558699be1068790563f20f4334537de1ffb99e4aa156860c8524c40581a9a4db->leave($__internal_558699be1068790563f20f4334537de1ffb99e4aa156860c8524c40581a9a4db_prof);
 
     }
 
-    // line 15
+    // line 12
     public function block_header($context, array $blocks = array())
     {
-        $__internal_8e7dcba2696ad525a52792223fa176e055fe9c34649f6e519617ddf5dc92dc8b = $this->env->getExtension("native_profiler");
-        $__internal_8e7dcba2696ad525a52792223fa176e055fe9c34649f6e519617ddf5dc92dc8b->enter($__internal_8e7dcba2696ad525a52792223fa176e055fe9c34649f6e519617ddf5dc92dc8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
+        $__internal_75bda053501fefa3394c8d8574bc9efbb3ac935ff577a070689f4157f63823ac = $this->env->getExtension("native_profiler");
+        $__internal_75bda053501fefa3394c8d8574bc9efbb3ac935ff577a070689f4157f63823ac->enter($__internal_75bda053501fefa3394c8d8574bc9efbb3ac935ff577a070689f4157f63823ac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
 
         $this->displayParentBlock("header", $context, $blocks);
         
-        $__internal_8e7dcba2696ad525a52792223fa176e055fe9c34649f6e519617ddf5dc92dc8b->leave($__internal_8e7dcba2696ad525a52792223fa176e055fe9c34649f6e519617ddf5dc92dc8b_prof);
+        $__internal_75bda053501fefa3394c8d8574bc9efbb3ac935ff577a070689f4157f63823ac->leave($__internal_75bda053501fefa3394c8d8574bc9efbb3ac935ff577a070689f4157f63823ac_prof);
 
     }
 
-    // line 26
+    // line 23
     public function block_navigation($context, array $blocks = array())
     {
-        $__internal_bb61fec278e6f247a467ada31b3e274a1eaf9ee21729b915d2a267e3577fbdec = $this->env->getExtension("native_profiler");
-        $__internal_bb61fec278e6f247a467ada31b3e274a1eaf9ee21729b915d2a267e3577fbdec->enter($__internal_bb61fec278e6f247a467ada31b3e274a1eaf9ee21729b915d2a267e3577fbdec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
+        $__internal_f7785850c5d97f1fc584b9e1132d43724d33bf8a27b6aefd94964cc15aadf520 = $this->env->getExtension("native_profiler");
+        $__internal_f7785850c5d97f1fc584b9e1132d43724d33bf8a27b6aefd94964cc15aadf520->enter($__internal_f7785850c5d97f1fc584b9e1132d43724d33bf8a27b6aefd94964cc15aadf520_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
 
         $this->displayParentBlock("navigation", $context, $blocks);
         
-        $__internal_bb61fec278e6f247a467ada31b3e274a1eaf9ee21729b915d2a267e3577fbdec->leave($__internal_bb61fec278e6f247a467ada31b3e274a1eaf9ee21729b915d2a267e3577fbdec_prof);
+        $__internal_f7785850c5d97f1fc584b9e1132d43724d33bf8a27b6aefd94964cc15aadf520->leave($__internal_f7785850c5d97f1fc584b9e1132d43724d33bf8a27b6aefd94964cc15aadf520_prof);
 
     }
 
@@ -435,347 +385,276 @@ class __TwigTemplate_68cfc8fb079e19c9d8044be7d993cbe4406b630399ced7c2d396c702ad3
 
     public function getDebugInfo()
     {
-        return array (  415 => 26,  403 => 15,  336 => 282,  332 => 281,  252 => 204,  112 => 67,  70 => 27,  68 => 26,  56 => 16,  54 => 15,  42 => 5,  36 => 4,  11 => 1,);
+        return array (  365 => 23,  353 => 12,  308 => 233,  293 => 221,  279 => 210,  265 => 199,  235 => 172,  221 => 161,  207 => 150,  193 => 139,  180 => 129,  167 => 119,  78 => 33,  67 => 24,  65 => 23,  53 => 13,  51 => 12,  42 => 5,  36 => 4,  11 => 1,);
     }
 }
 /* {% extends "::layout.html.twig" %}*/
 /* */
 /* */
 /* {% block body %}*/
-/* <div id="wrapper">*/
+/*     <div id="wrapper">*/
+/*         <div id="top-line"></div>*/
 /* */
-/* <!-- Header*/
-/* ================================================== -->*/
-/* <div id="top-line"></div>*/
+/*         <!-- 960 Container -->*/
+/*         <div class="container">*/
 /* */
-/* <!-- 960 Container -->*/
-/* <div class="container">*/
+/*             <!-- Header -->*/
+/*             {% block header %}{{ parent() }}{% endblock %}*/
+/*             <!-- Header / End -->*/
 /* */
-/* 	<!-- Header -->*/
-/* 	{% block header %}{{ parent() }}{% endblock %}*/
-/* 	<!-- Header / End -->*/
+/*             <div class="clearfix"></div>*/
 /* */
-/* 	<div class="clearfix"></div>*/
-/* */
-/* </div>*/
-/* <!-- 960 Container / End -->*/
+/*         </div>*/
+/*         <!-- 960 Container / End -->*/
 /* */
 /* */
-/* <!-- Navigation*/
-/* ================================================== -->*/
-/* {% block navigation %}{{ parent() }}{% endblock %}*/
-/* <div class="clearfix"></div>*/
+/*         <!-- Navigation*/
+/*         ================================================== -->*/
+/*         {% block navigation %}{{ parent() }}{% endblock %}*/
+/*         <div class="clearfix"></div>*/
+/* */
+/* */
+/*         <!-- Content*/
+/*         ================================================== -->*/
+/* */
+/* */
+/*         <!-- LayerSlider  -->*/
+/*         <div class="map">*/
+/*             <img src="{{ asset('bundles/voyage/images/bg_circuit.jpg') }}" alt="basketball" usemap="#Map" />*/
+/*         </div>*/
+/*         <div class="clearfix"></div>*/
+/*         <!-- LayerSlider / End -->*/
+/* */
+/* */
+/*         <!-- 960 Container -->*/
+/*         <div class="container">*/
+/* */
+/*             <!-- Icon Boxes -->*/
+/* */
+/* */
+/*             <form role="form" id="" action="" method="post">*/
+/*                 <h3>Rechercher votre séjour</h3><hr>*/
+/* */
+/* */
+/*                 <div class="form-group">*/
+/*                     <label for="depart">Au départ de : </label>*/
+/*                     <select class="form-control" name="category">*/
+/*                         <option value="">Paris</option>*/
+/*                         <option value="0">Marseille</option>*/
+/*                         <option value="1">Bordeaux</option>*/
+/*                         <option value="2">Lille</option>*/
+/*                     </select>           */
+/*                 </div>*/
+/* */
+/* */
+/*                 <div class="form-group">*/
+/*                     <label for="arrivé">Destination : </label>*/
+/*                     <select class="form-control" name="category">*/
+/*                         <option value="">New-York</option>*/
+/*                         <option value="0">Tokyo</option>*/
+/*                         <option value="1">Montreal</option>*/
+/*                         <option value="2">Le Caire</option>*/
+/*                     </select>           */
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     <label for="date_debut">Du :</label>*/
+/*                     <input class="form-control" type="date" max="2017-12-31" min="2015-01-01" name="date_debut">*/
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     <label for="date_fin">Au :</label>*/
+/*                     <input class="form-control" type="date" max="2012-06-25" min="2011-08-13" name="date_fin">*/
+/*                 </div>*/
 /* */
 /* */
 /* */
-/* <!-- Content*/
-/* ================================================== -->*/
-/* <div id="content">*/
+/* */
+/*                 <div class="form-group">*/
+/*                     <label for="duree">Durée :</label>*/
+/*                     <input type="text" class="form-control" id="duree" placeholder="Durée">*/
+/*                 </div>*/
 /* */
 /* */
-/* <!-- 960 Container -->*/
-/* <div class="container floated">*/
 /* */
-/* 	<div class="sixteen floated page-title">*/
-/* */
-/* 		<h2>Our Blog</h2>*/
-/* */
-/* 		<nav id="breadcrumbs">*/
-/* 			<ul>*/
-/* 				<li>You are here:</li>*/
-/* 				<li><a href="#">Home</a></li>*/
-/* 				<li>Blog</li>*/
-/* 			</ul>*/
-/* 		</nav>*/
-/* */
-/* 	</div>*/
-/* */
-/* </div>*/
-/* <!-- 960 Container / End -->*/
+/*                 <div class="form-group">*/
+/*                     <label for="prix">Budget:</label>*/
+/*                     <input type="text" class="form-control" id="prix" placeholder="Votre Budget">*/
+/*                 </div>*/
 /* */
 /* */
-/* <!-- 960 Container -->*/
-/* <div class="container floated">*/
+/*                 <br>*/
+/*                 <button type="submit" class="btn btn-success">Rechercher</button>*/
 /* */
-/* 	<!-- Page Content -->*/
-/* 	<div class="eleven floated">*/
+/*             </form>*/
 /* */
-/* 		<!-- Post -->*/
-/* 		<article class="post">*/
+/*             <div class="clearfix"></div>*/
 /* */
-/* 			<figure class="post-img">*/
-/* 				<a href="blog-post.html"><img  src="{{ asset('bundles/voyage/images/blog-01.jpg') }}"  alt="" /></a>*/
-/*                                */
-/* 			</figure>*/
-/* 			*/
-/* 			<section class="date">*/
-/* 				<span class="day">28</span>*/
-/* 				<span class="month">Dec</span>*/
-/* 			</section>*/
-/* 			*/
-/* 			<section class="post-content">*/
+/*             <!-- -->*/
 /* */
-/* 				<header class="meta">*/
-/* 					<h2><a href="blog-post.html">The Boating Life Begins With a Good Storm</a></h2>*/
-/* 					<span><i class="halflings user"></i>By <a href="#">admin</a></span>*/
-/* 					<span><i class="halflings tag"></i><a href="#">Boating</a>, <a href="#">Recreation</a></span>*/
-/* 					<span><i class="halflings comments"></i>With <a href="#">12 Comments</a></span>*/
-/* 				</header>*/
+/*         </div>*/
 /* */
-/* 				<p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim.</p>*/
+/*         <div class="container floated grey big_container">*/
+/*             <div class="blank floated grey">*/
+/*                 <h3 class="text-left ">Nos Meilleurs Circuits</h3> */
 /* */
-/* 				<a href="blog-post.html" class="button color">Read More</a>*/
-/* 			*/
-/* 			</section>*/
+/*                 <div class="description">*/
+/*                     <p class="text-justify">*/
+/*                         Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.*/
+/*                     </p>*/
+/*                 </div>*/
 /* */
-/* 		</article>*/
+/*                 <div class="vignette">*/
+/*                     <a href="#">*/
+/*                         <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                     </a>*/
+/*                     <div class="info">*/
+/*                         <h5>Information pays</h5>*/
+/*                         <a href="#">Lien promotion</a>*/
+/*                         <p>prix promotion<span class="prix">1500€</span></p>*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="vignette">*/
+/*                     <a href="#">*/
+/*                         <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                     </a>*/
+/*                     <div class="info">*/
+/*                         <h5>Information pays</h5>*/
+/*                         <a href="#">Lien promotion</a>*/
+/*                         <p>prix promotion<span class="prix">1500€</span></p>*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="vignette">*/
+/*                     <a href="#">*/
+/*                         <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                     </a>*/
+/*                     <div class="info">*/
+/*                         <h5>Information pays</h5>*/
+/*                         <a href="#">Lien promotion</a>*/
+/*                         <p>prix promotion<span class="prix">1500€</span></p>*/
+/*                     </div>*/
+/*                 </div>*/
 /* */
+/*                 <div class="vignette margin-top">*/
+/*                     <a href="#">*/
+/*                         <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                     </a>*/
+/*                     <div class="info">*/
+/*                         <h5>Information pays</h5>*/
+/*                         <a href="#">Lien promotion</a>*/
+/*                         <p>prix promotion<span class="prix">1500€</span></p>*/
+/*                     </div>*/
+/*                 </div>*/
 /* */
-/* 		<!-- Divider -->*/
-/* 		<div class="line"></div>*/
+/*                 <div class="vignette margin-top">*/
+/*                     <a href="#">*/
+/*                         <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                     </a>*/
+/*                     <div class="info">*/
+/*                         <h5>Information pays</h5>*/
+/*                         <a href="#">Lien promotion</a>*/
+/*                         <p>prix promotion<span class="prix">1500€</span></p>*/
+/*                     </div>*/
+/*                 </div>*/
 /* */
+/*                 <div class="vignette margin-top">*/
+/*                     <a href="#">*/
+/*                         <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                     </a>*/
+/*                     <div class="info">*/
+/*                         <h5>Information pays</h5>*/
+/*                         <a href="#">Lien promotion</a>*/
+/*                         <p>prix promotion<span class="prix">1500€</span></p>*/
+/*                     </div>*/
+/*                 </div>*/
 /* */
-/* 		*/
+/*             </div>*/
 /* */
-/* 		*/
-/* */
-/* 		<!-- Pagination -->*/
-/* 		<nav class="pagination">*/
-/* 			<ul>*/
-/* 				<li><a href="#" class="current">1</a></li>*/
-/* 				<li><a href="#">2</a></li>*/
-/* 				<li><a href="#">Next</a></li>*/
-/* 			</ul>*/
-/* 			<div class="clearfix"></div>*/
-/* 		</nav>*/
-/* */
-/* 	</div>*/
-/* 	<!-- Content / End -->*/
-/* */
-/* */
-/* 	<!-- Sidebar -->*/
-/* 	<div class="four floated sidebar right">*/
-/* 		<aside class="sidebar">*/
-/* */
-/* 			<!-- Search -->*/
-/* 			<nav class="widget-search">*/
-/* 				<form action="http://vasterad.com/themes/nevia/404-page.html" method="get">*/
-/* 					<button class="search-btn-widget"></button>*/
-/* 					<input class="search-field" type="text" onblur="if(this.value=='')this.value='Search';" onfocus="if(this.value=='Search')this.value='';" value="Search" />*/
-/* 				</form>*/
-/* 			</nav>*/
-/* 			<div class="clearfix"></div>*/
-/* */
-/* 			<!-- Categories -->*/
-/* 			<nav class="widget">*/
-/* 				<h4>Categories</h4>*/
-/* 				<ul class="categories">*/
-/* 					<li><a href="#">Business</a></li>*/
-/* 					<li><a href="#">Entertainment</a></li>*/
-/* 					<li><a href="#">News & Politics</a></li>*/
-/* 					<li><a href="#">Social Media</a></li>*/
-/* 					<li><a href="#">Technology</a></li>*/
-/* 				</ul>*/
-/* 			</nav>*/
-/* */
-/* 			<!-- Tags -->*/
-/* 			<div class="widget">*/
-/* 				<h4>Tags</h4>*/
-/* 				<nav class="tags">*/
-/* 					<a href="#">Mountains</a>*/
-/* 					<a href="#">Winter Sports</a>*/
-/* 					<a href="#">Boating</a>*/
-/* 					<a href="#">Recreation</a>*/
-/* 					<a href="#">Skiing</a>*/
-/* 					<a href="#">Tourism</a>*/
-/* 					<a href="#">Nature</a>*/
-/* 					<a href="#">Alps</a>*/
-/* 				</nav>*/
-/* 			</div>*/
-/* */
-/* 			<!-- Archives -->*/
-/* 			<nav class="widget">*/
-/* 				<h4>Archives</h4>*/
-/* 				<ul class="categories">*/
-/* 					<li><a href="#">October 2012</a></li>*/
-/* 					<li><a href="#">November 2012</a></li>*/
-/* 					<li><a href="#">December 2012</a></li>*/
-/* 				</ul>*/
-/* 			</nav>*/
-/* */
-/* 			<!-- Tweets-->*/
-/* 			<div class="widget">*/
-/* 				<h4>Twitter</h4>*/
-/* 				<ul id="twitter-blog"></ul>*/
-/* 					<script type="text/javascript">*/
-/* 						jQuery(document).ready(function($){*/
-/* 						$.getJSON('http://api.twitter.com/1/statuses/user_timeline/purethemes.json?count=2&amp;callback=?', function(tweets){*/
-/* 						$("#twitter-blog").html(tz_format_twitter(tweets));*/
-/* 						}); });*/
-/* 					</script>*/
-/* 				<div class="clearfix"></div>*/
-/* 			</div>*/
+/*         </div>*/
+/*         <div class="clearfix"></div>*/
 /* */
 /* */
-/* 		</aside>*/
-/* 	</div>*/
-/* 	<!-- Page Content / End -->*/
+/*         <div class="container floated grey ">*/
+/*             <div class="blank floated grey">*/
+/*                 <h3 class="text-left ">Amerique Centrale</h3> */
 /* */
-/* </div>*/
-/* <!-- 960 Container / End -->*/
+/*                 <div class="description">*/
+/*                     <p class="text-justify">*/
+/*                         Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.*/
+/*                     </p>*/
+/*                 </div>*/
+/*                 <div class="block_vignette">*/
+/*                     <div class="vignette four">*/
+/*                         <a href="#">*/
+/*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                         </a>*/
+/*                         <div class="info">*/
+/*                             <h5>Amérique</h5>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <div class="vignette four">*/
+/*                         <a href="#">*/
+/*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                         </a>*/
+/*                         <div class="info">*/
+/*                             <h5>Europe</h5>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <div class="vignette four ">*/
+/*                         <a href="#">*/
+/*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                         </a>*/
+/*                         <div class="info">*/
+/*                             <h5>Afrique</h5>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                         </div>*/
+/*                     </div>*/
 /* */
-/* </div>*/
-/* <!-- Content / End -->*/
+/*                     <div class="vignette four ">*/
+/*                         <a href="#">*/
+/*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
+/*                         </a>*/
+/*                         <div class="info">*/
+/*                             <h5>Asie / Océanie</h5>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                             <a href="#">Lien promotion</a><br>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                 </div>*/
+/*             </div>*/
+/* */
+/*         </div>*/
+/*         <div class="clearfix"></div>*/
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/*     </div>*/
+/*     <!-- Content / End -->*/
 /* */
 /* </div>*/
 /* <!-- Wrapper / End -->*/
 /* */
 /* */
-/* <!-- Footer*/
-/* ================================================== -->*/
 /* */
-/* <!-- Footer / Start -->*/
-/* <footer id="footer">*/
-/* 	<!-- 960 Container -->*/
-/* 	<div class="container">*/
-/* */
-/* 		<!-- About -->*/
-/* 		<div class="four columns">*/
-/* 			<img id="logo-footer"   src="{{ asset('bundles/voyage/images/logo-footer.png') }}"  alt="" />*/
-/*                        */
-/* 			<p>Morbi gravida imperdiet rutrum fusce mattis, lectus consequat vestibulum, duinibh fermentum ligula.</p>*/
-/* 		</div>*/
-/* */
-/* 		<!-- Contact Details -->*/
-/* 		<div class="four columns">*/
-/* 			<h4>Contact Details</h4>*/
-/* 			<ul class="contact-details-alt">*/
-/* 				<li><i class="halflings white map-marker"></i> <p><strong>Address:</strong> 123 Seward Street, Oklahoma City, USA</p></li>*/
-/* 				<li><i class="halflings white user"></i> <p><strong>Phone:</strong> +48 880 440 110</p></li>*/
-/* 				<li><i class="halflings white envelope"></i> <p><strong>Email:</strong> <a href="#">mail@example.com</a></p></li>*/
-/* 			</ul>*/
-/* 		</div>*/
-/* */
-/* 		<!-- Photo Stream -->*/
-/* 		<div class="four columns">*/
-/* 			<h4>Photo Stream</h4>*/
-/* 			<div class="flickr-widget">*/
-/* 				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=48035108@N07"></script>*/
-/* 				<div class="clearfix"></div>*/
-/* 			</div>*/
-/* 		</div>*/
-/* */
-/* 		<!-- Twitter -->*/
-/* 		<div class="four columns">*/
-/* 			<h4>Twitter</h4>*/
-/* 			<ul id="twitter"></ul>*/
-/* 				<script type="text/javascript">*/
-/* 					jQuery(document).ready(function($){*/
-/* 					$.getJSON('http://api.twitter.com/1/statuses/user_timeline/vasterad.json?count=1&amp;callback=?', function(tweets){*/
-/* 					$("#twitter").html(tz_format_twitter(tweets));*/
-/* 					}); });*/
-/* 				</script>*/
-/* 			<div class="clearfix"></div>*/
-/* 		</div>*/
-/* */
-/* 	</div>*/
-/* 	<!-- 960 Container / End -->*/
-/* */
-/* </footer>*/
-/* <!-- Footer / End -->*/
-/* */
-/* */
-/* <!-- Footer Bottom / Start  -->*/
-/* <footer id="footer-bottom">*/
-/* */
-/* 	<!-- 960 Container -->*/
-/* 	<div class="container">*/
-/* */
-/* 		<!-- Copyrights -->*/
-/* 		<div class="eight columns">*/
-/* 			<div class="copyright">*/
-/* 				© Copyright 2012 by <a href="#">Nevia</a>. All Rights Reserved.*/
-/* 			</div>*/
-/* 		</div>*/
-/* */
-/* 		<!-- Menu -->*/
-/* 		<div class="eight columns">*/
-/* 			<nav id="sub-menu">*/
-/* 				<ul>*/
-/* 					<li><a href="#">FAQ's</a></li>*/
-/* 					<li><a href="#">Sitemap</a></li>*/
-/* 					<li><a href="#">Contact</a></li>*/
-/* 				</ul>*/
-/* 			</nav>*/
-/* 		</div>*/
-/* */
-/* 	</div>*/
-/* 	<!-- 960 Container / End -->*/
-/* */
-/* </footer>*/
-/* <!-- Footer Bottom / End -->*/
-/* */
-/* */
-/* <!-- Style Switcher*/
-/* ================================================== -->*/
-/*  <link href="{{ asset('bundles/voyage/css/switcher.css') }}" rel="stylesheet">*/
-/*  <script src="{{ asset('bundles/voyage/scripts/switcher.js') }}" rel="javascript"></script>*/
-/* */
-/* <section id="style-switcher">*/
-/* 	<h2>Style Switcher <a href="#"></a></h2>*/
-/* 	<div>*/
-/* 	<h3>Predefined Colors</h3>*/
-/* 		<ul class="colors" id="color1">*/
-/* 			<li><a href="#" class="blue" title="Blue"></a></li>*/
-/* 			<li><a href="#" class="green" title="Green"></a></li>*/
-/* 			<li><a href="#" class="orange" title="Orange"></a></li>*/
-/* 			<li><a href="#" class="navy" title="Navy"></a></li>*/
-/* 			<li><a href="#" class="yellow" title="Yellow"></a></li>*/
-/* 			<li><a href="#" class="peach" title="Peach"></a></li>*/
-/* 			<li><a href="#" class="beige" title="Beige"></a></li>*/
-/* 			<li><a href="#" class="purple" title="Purple"></a></li>*/
-/* 			<li><a href="#" class="red" title="Red"></a></li>*/
-/* 			<li><a href="#" class="pink" title="Pink"></a></li>*/
-/* 			<li><a href="#" class="celadon" title="Celadon"></a></li>*/
-/* 			<li><a href="#" class="brown" title="Brown"></a></li>*/
-/* 			<li><a href="#" class="cherry" title="Cherry"></a></li>*/
-/* 			<li><a href="#" class="gray" title="Gray"></a></li>*/
-/* 			<li><a href="#" class="dark" title="Dark"></a></li>*/
-/* 			<li><a href="#" class="cyan" title="Cyan"></a></li>*/
-/* 			<li><a href="#" class="olive" title="Olive"></a></li>*/
-/* 			<li><a href="#" class="dirty-green" title="Dirty Green"></a></li>*/
-/* 		</ul>*/
-/* 		*/
-/* 	<h3>Menu Style</h3>*/
-/* 	<select id="menu-style">*/
-/* 		<option value="1">Style 1</option>*/
-/* 		<option value="2">Style 2</option>*/
-/* 	</select>*/
-/* */
-/* 	<h3>Background Image</h3>*/
-/* 		 <ul class="colors bg" id="bg">*/
-/* 			<li><a href="#" class="bg1"></a></li>*/
-/* 			<li><a href="#" class="bg2"></a></li>*/
-/* 			<li><a href="#" class="bg3"></a></li>*/
-/* 			<li><a href="#" class="bg4"></a></li>*/
-/* 			<li><a href="#" class="bg5"></a></li>*/
-/* 			<li><a href="#" class="bg6"></a></li>*/
-/* 			<li><a href="#" class="bg7"></a></li>*/
-/* 			<li><a href="#" class="bg8"></a></li>*/
-/* 			<li><a href="#" class="bg9"></a></li>*/
-/* 			<li><a href="#" class="bg10"></a></li>*/
-/* 			<li><a href="#" class="bg11"></a></li>*/
-/* 			<li><a href="#" class="bg12"></a></li>*/
-/* 			<li><a href="#" class="bg13"></a></li>*/
-/* 			<li><a href="#" class="bg14"></a></li>*/
-/* 			<li><a href="#" class="bg15"></a></li>*/
-/* 			<li><a href="#" class="bg16"></a></li>*/
-/* 			<li><a href="#" class="bg17"></a></li>*/
-/* 			<li><a href="#" class="bg18"></a></li>*/
-/* 		</ul>*/
-/* 	</div>*/
-/* */
-/* 	<div id="reset"><a href="#" class="button color blue">Reset</a></div>*/
-/* */
-/* </section>*/
-/*   {% endblock %}*/
+/* {% endblock %}*/

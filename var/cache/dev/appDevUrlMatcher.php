@@ -138,6 +138,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\ContactController::contactAction',  '_route' => 'Voyage_contact',);
             }
 
+            // Voyage_search
+            if ($pathinfo === '/Voyage/search') {
+                return array (  '_controller' => 'Voyage\\VoyageBundle\\Controller\\SearchController::searchAction',  '_route' => 'Voyage_search',);
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

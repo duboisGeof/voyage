@@ -23,20 +23,20 @@ class __TwigTemplate_fcb93eeafe7835530b7c74ab638e613e7fb0b8d8d411c19392bf311e864
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e80ea3e59ac0045bd118c5ce3fcde7fab71cfa61d10026472c0d621876933960 = $this->env->getExtension("native_profiler");
-        $__internal_e80ea3e59ac0045bd118c5ce3fcde7fab71cfa61d10026472c0d621876933960->enter($__internal_e80ea3e59ac0045bd118c5ce3fcde7fab71cfa61d10026472c0d621876933960_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VoyageBundle:Layout:single.html.twig"));
+        $__internal_0268d8f7d5dcf833166bbcf6d9ed46b3ede08a38b77b4daa6562307efecbfcb0 = $this->env->getExtension("native_profiler");
+        $__internal_0268d8f7d5dcf833166bbcf6d9ed46b3ede08a38b77b4daa6562307efecbfcb0->enter($__internal_0268d8f7d5dcf833166bbcf6d9ed46b3ede08a38b77b4daa6562307efecbfcb0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VoyageBundle:Layout:single.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e80ea3e59ac0045bd118c5ce3fcde7fab71cfa61d10026472c0d621876933960->leave($__internal_e80ea3e59ac0045bd118c5ce3fcde7fab71cfa61d10026472c0d621876933960_prof);
+        $__internal_0268d8f7d5dcf833166bbcf6d9ed46b3ede08a38b77b4daa6562307efecbfcb0->leave($__internal_0268d8f7d5dcf833166bbcf6d9ed46b3ede08a38b77b4daa6562307efecbfcb0_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_9fc67e61ca0354146d18d745cb9cb2892987581699bdaecc191b531a6b7eb014 = $this->env->getExtension("native_profiler");
-        $__internal_9fc67e61ca0354146d18d745cb9cb2892987581699bdaecc191b531a6b7eb014->enter($__internal_9fc67e61ca0354146d18d745cb9cb2892987581699bdaecc191b531a6b7eb014_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f693583c2f041ec09ae2f03aff8e20572d32a952d5a2d3700964210ac19344d9 = $this->env->getExtension("native_profiler");
+        $__internal_f693583c2f041ec09ae2f03aff8e20572d32a952d5a2d3700964210ac19344d9->enter($__internal_f693583c2f041ec09ae2f03aff8e20572d32a952d5a2d3700964210ac19344d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
         echo "    <div id=\"wrapper\">
@@ -163,7 +163,7 @@ class __TwigTemplate_fcb93eeafe7835530b7c74ab638e613e7fb0b8d8d411c19392bf311e864
                             <h3 class=\"margin\">Idée de vacance</h3>
                         </div>
 
-                        <div class=\"lol\">
+                        <div class=\"vignette\">
                             <a href=\"#\">
                                 <img src=\"";
         // line 115
@@ -173,7 +173,7 @@ class __TwigTemplate_fcb93eeafe7835530b7c74ab638e613e7fb0b8d8d411c19392bf311e864
                             <div class=\"info\">info</div>
                         </div>
 
-                        <div class=\"lol\">
+                        <div class=\"vignette\">
                             <a href=\"#\">
                                 <img src=\"";
         // line 122
@@ -184,7 +184,7 @@ class __TwigTemplate_fcb93eeafe7835530b7c74ab638e613e7fb0b8d8d411c19392bf311e864
                         </div>
 
                         <!-- 1/4 Column -->
-                        <div class=\"lol\">
+                        <div class=\"vignette\">
                             <a href=\"#\">
                                 <img src=\"";
         // line 130
@@ -221,31 +221,31 @@ class __TwigTemplate_fcb93eeafe7835530b7c74ab638e613e7fb0b8d8d411c19392bf311e864
 <!-- Footer Bottom / End -->
 ";
         
-        $__internal_9fc67e61ca0354146d18d745cb9cb2892987581699bdaecc191b531a6b7eb014->leave($__internal_9fc67e61ca0354146d18d745cb9cb2892987581699bdaecc191b531a6b7eb014_prof);
+        $__internal_f693583c2f041ec09ae2f03aff8e20572d32a952d5a2d3700964210ac19344d9->leave($__internal_f693583c2f041ec09ae2f03aff8e20572d32a952d5a2d3700964210ac19344d9_prof);
 
     }
 
     // line 12
     public function block_header($context, array $blocks = array())
     {
-        $__internal_7863703be1348c54de9337c9eeee96101532d0c147c5568119d3702af3dbeffb = $this->env->getExtension("native_profiler");
-        $__internal_7863703be1348c54de9337c9eeee96101532d0c147c5568119d3702af3dbeffb->enter($__internal_7863703be1348c54de9337c9eeee96101532d0c147c5568119d3702af3dbeffb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
+        $__internal_aeaf1d23c16330c381295748e51b5d871630ce48197a4b0cfca79ae3ccc16a33 = $this->env->getExtension("native_profiler");
+        $__internal_aeaf1d23c16330c381295748e51b5d871630ce48197a4b0cfca79ae3ccc16a33->enter($__internal_aeaf1d23c16330c381295748e51b5d871630ce48197a4b0cfca79ae3ccc16a33_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
 
         $this->displayParentBlock("header", $context, $blocks);
         
-        $__internal_7863703be1348c54de9337c9eeee96101532d0c147c5568119d3702af3dbeffb->leave($__internal_7863703be1348c54de9337c9eeee96101532d0c147c5568119d3702af3dbeffb_prof);
+        $__internal_aeaf1d23c16330c381295748e51b5d871630ce48197a4b0cfca79ae3ccc16a33->leave($__internal_aeaf1d23c16330c381295748e51b5d871630ce48197a4b0cfca79ae3ccc16a33_prof);
 
     }
 
     // line 23
     public function block_navigation($context, array $blocks = array())
     {
-        $__internal_ca74e67d55ce5b2611fd20ad859045e60bba992dfe7be65cd61f440f68ebc1fd = $this->env->getExtension("native_profiler");
-        $__internal_ca74e67d55ce5b2611fd20ad859045e60bba992dfe7be65cd61f440f68ebc1fd->enter($__internal_ca74e67d55ce5b2611fd20ad859045e60bba992dfe7be65cd61f440f68ebc1fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
+        $__internal_f20acf52be9fd5a154e77bdac34e604b083b60f8d402b89402c65108d6cab504 = $this->env->getExtension("native_profiler");
+        $__internal_f20acf52be9fd5a154e77bdac34e604b083b60f8d402b89402c65108d6cab504->enter($__internal_f20acf52be9fd5a154e77bdac34e604b083b60f8d402b89402c65108d6cab504_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
 
         $this->displayParentBlock("navigation", $context, $blocks);
         
-        $__internal_ca74e67d55ce5b2611fd20ad859045e60bba992dfe7be65cd61f440f68ebc1fd->leave($__internal_ca74e67d55ce5b2611fd20ad859045e60bba992dfe7be65cd61f440f68ebc1fd_prof);
+        $__internal_f20acf52be9fd5a154e77bdac34e604b083b60f8d402b89402c65108d6cab504->leave($__internal_f20acf52be9fd5a154e77bdac34e604b083b60f8d402b89402c65108d6cab504_prof);
 
     }
 
@@ -376,14 +376,14 @@ class __TwigTemplate_fcb93eeafe7835530b7c74ab638e613e7fb0b8d8d411c19392bf311e864
 /*                             <h3 class="margin">Idée de vacance</h3>*/
 /*                         </div>*/
 /* */
-/*                         <div class="lol">*/
+/*                         <div class="vignette">*/
 /*                             <a href="#">*/
 /*                                 <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                             </a>*/
 /*                             <div class="info">info</div>*/
 /*                         </div>*/
 /* */
-/*                         <div class="lol">*/
+/*                         <div class="vignette">*/
 /*                             <a href="#">*/
 /*                                 <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                             </a>*/
@@ -391,7 +391,7 @@ class __TwigTemplate_fcb93eeafe7835530b7c74ab638e613e7fb0b8d8d411c19392bf311e864
 /*                         </div>*/
 /* */
 /*                         <!-- 1/4 Column -->*/
-/*                         <div class="lol">*/
+/*                         <div class="vignette">*/
 /*                             <a href="#">*/
 /*                                 <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                             </a>*/

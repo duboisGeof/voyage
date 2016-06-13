@@ -41,6 +41,7 @@ class appDevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         'Voyage_sejour' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Voyage\\VoyageBundle\\Controller\\SejourController::sejourAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/Voyage/sejour',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'Voyage_single' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Voyage\\VoyageBundle\\Controller\\SingleController::singleAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/Voyage/single',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'Voyage_contact' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Voyage\\VoyageBundle\\Controller\\ContactController::contactAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/Voyage/contact',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'Voyage_search' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Voyage\\VoyageBundle\\Controller\\SearchController::searchAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/Voyage/search',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
     );
         }
     }

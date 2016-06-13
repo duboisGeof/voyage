@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{521C5887-E018-44E7-94C2-B520F4AF629F}" Loaded="No" Name="ok" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="voyage.mcd"/>
+		<Model Expanded="Yes" ID="{4B96002B-2060-4F3A-B4DC-F8F5E200398D}" Loaded="No" Name="ModeleConceptuelDonnees_1" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="ModeleConceptuelDonnees_1.mpd"/>
+		<Model Expanded="Yes" ID="{521C5887-E018-44E7-94C2-B520F4AF629F}" Name="ok" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="voyage.mcd"/>
+		<Model Expanded="Yes" ID="{62D19DF2-22E5-4AE2-8307-48CA5ACD5F6A}" Name="ok" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="ok.moo"/>
+		<Model Expanded="Yes" ID="{0D76CC41-38EA-4028-9C54-E6F3812E3249}" Name="ok" Selected="Yes" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="ok.mld"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>

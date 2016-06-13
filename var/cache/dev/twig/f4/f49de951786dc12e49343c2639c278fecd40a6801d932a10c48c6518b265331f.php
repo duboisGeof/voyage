@@ -23,20 +23,20 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_327391d7599d1ebe1ee4c497fbcfad6bfec2114df0095695ac364c3ba7630607 = $this->env->getExtension("native_profiler");
-        $__internal_327391d7599d1ebe1ee4c497fbcfad6bfec2114df0095695ac364c3ba7630607->enter($__internal_327391d7599d1ebe1ee4c497fbcfad6bfec2114df0095695ac364c3ba7630607_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VoyageBundle:Layout:accueil.html.twig"));
+        $__internal_19d2ffac8f5e6a0e6f357303996b179188173f18413f38d4d0e7c98411dd6500 = $this->env->getExtension("native_profiler");
+        $__internal_19d2ffac8f5e6a0e6f357303996b179188173f18413f38d4d0e7c98411dd6500->enter($__internal_19d2ffac8f5e6a0e6f357303996b179188173f18413f38d4d0e7c98411dd6500_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VoyageBundle:Layout:accueil.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_327391d7599d1ebe1ee4c497fbcfad6bfec2114df0095695ac364c3ba7630607->leave($__internal_327391d7599d1ebe1ee4c497fbcfad6bfec2114df0095695ac364c3ba7630607_prof);
+        $__internal_19d2ffac8f5e6a0e6f357303996b179188173f18413f38d4d0e7c98411dd6500->leave($__internal_19d2ffac8f5e6a0e6f357303996b179188173f18413f38d4d0e7c98411dd6500_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_49dfa03396e2f9de24ee372b9af230c7af2928d08522712d5b1c81b1a6939bf7 = $this->env->getExtension("native_profiler");
-        $__internal_49dfa03396e2f9de24ee372b9af230c7af2928d08522712d5b1c81b1a6939bf7->enter($__internal_49dfa03396e2f9de24ee372b9af230c7af2928d08522712d5b1c81b1a6939bf7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8783bde6657b987d246c5cc081c6c90dace8952160e2b2c6cbafea1e9439f4ae = $this->env->getExtension("native_profiler");
+        $__internal_8783bde6657b987d246c5cc081c6c90dace8952160e2b2c6cbafea1e9439f4ae->enter($__internal_8783bde6657b987d246c5cc081c6c90dace8952160e2b2c6cbafea1e9439f4ae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
         echo "    <div id=\"wrapper\">
@@ -202,7 +202,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 
                 <h3>Nos promotions</h3>
                 <div class=\"carrousel\" id=\"big_carrousel\">
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 149
@@ -216,7 +216,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                         </div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 160
@@ -226,7 +226,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                         <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 167
@@ -236,7 +236,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 174
@@ -246,7 +246,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                         <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 181
@@ -256,7 +256,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 188
@@ -266,7 +266,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 195
@@ -276,7 +276,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 202
@@ -286,7 +286,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 209
@@ -296,7 +296,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 216
@@ -306,7 +306,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 223
@@ -316,7 +316,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
 
-                    <div class=\"lol\">
+                    <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 230
@@ -340,7 +340,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 
                 <h3>Top 3 des ventes</h3>
                 
-                     <div class=\"lol\">
+                     <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 251
@@ -350,7 +350,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
                         
-                         <div class=\"lol\">
+                         <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 258
@@ -360,7 +360,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
                         
-                         <div class=\"lol\">
+                         <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 265
@@ -382,7 +382,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                 <h3>Nouveautés</h3>
               
                    
-                     <div class=\"lol\">
+                     <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 284
@@ -392,7 +392,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
                         
-                         <div class=\"lol\">
+                         <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 291
@@ -402,7 +402,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
                          <div class=\"info\">info</div>
                     </div>
                         
-                         <div class=\"lol\">
+                         <div class=\"vignette\">
                         <a href=\"#\">
                             <img src=\"";
         // line 298
@@ -426,31 +426,31 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 
 ";
         
-        $__internal_49dfa03396e2f9de24ee372b9af230c7af2928d08522712d5b1c81b1a6939bf7->leave($__internal_49dfa03396e2f9de24ee372b9af230c7af2928d08522712d5b1c81b1a6939bf7_prof);
+        $__internal_8783bde6657b987d246c5cc081c6c90dace8952160e2b2c6cbafea1e9439f4ae->leave($__internal_8783bde6657b987d246c5cc081c6c90dace8952160e2b2c6cbafea1e9439f4ae_prof);
 
     }
 
     // line 12
     public function block_header($context, array $blocks = array())
     {
-        $__internal_60ffd92d06d0afed3da02f62924bea7f8833d655a5698e5a691988f9981f1f64 = $this->env->getExtension("native_profiler");
-        $__internal_60ffd92d06d0afed3da02f62924bea7f8833d655a5698e5a691988f9981f1f64->enter($__internal_60ffd92d06d0afed3da02f62924bea7f8833d655a5698e5a691988f9981f1f64_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
+        $__internal_d47c654186ff6422efde37808009ab4822eea7bd33779632a79e1fa5682b0cf6 = $this->env->getExtension("native_profiler");
+        $__internal_d47c654186ff6422efde37808009ab4822eea7bd33779632a79e1fa5682b0cf6->enter($__internal_d47c654186ff6422efde37808009ab4822eea7bd33779632a79e1fa5682b0cf6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
 
         $this->displayParentBlock("header", $context, $blocks);
         
-        $__internal_60ffd92d06d0afed3da02f62924bea7f8833d655a5698e5a691988f9981f1f64->leave($__internal_60ffd92d06d0afed3da02f62924bea7f8833d655a5698e5a691988f9981f1f64_prof);
+        $__internal_d47c654186ff6422efde37808009ab4822eea7bd33779632a79e1fa5682b0cf6->leave($__internal_d47c654186ff6422efde37808009ab4822eea7bd33779632a79e1fa5682b0cf6_prof);
 
     }
 
     // line 23
     public function block_navigation($context, array $blocks = array())
     {
-        $__internal_8fca9b7d17c7cefc3b17e7bbe8f870db54f12862a5fb796d1018b97f5f8da62b = $this->env->getExtension("native_profiler");
-        $__internal_8fca9b7d17c7cefc3b17e7bbe8f870db54f12862a5fb796d1018b97f5f8da62b->enter($__internal_8fca9b7d17c7cefc3b17e7bbe8f870db54f12862a5fb796d1018b97f5f8da62b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
+        $__internal_ec91551072e4b0bfc24fc89eef6c94428c181094d609b8cdc3bd293375e49a5e = $this->env->getExtension("native_profiler");
+        $__internal_ec91551072e4b0bfc24fc89eef6c94428c181094d609b8cdc3bd293375e49a5e->enter($__internal_ec91551072e4b0bfc24fc89eef6c94428c181094d609b8cdc3bd293375e49a5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
 
         $this->displayParentBlock("navigation", $context, $blocks);
         
-        $__internal_8fca9b7d17c7cefc3b17e7bbe8f870db54f12862a5fb796d1018b97f5f8da62b->leave($__internal_8fca9b7d17c7cefc3b17e7bbe8f870db54f12862a5fb796d1018b97f5f8da62b_prof);
+        $__internal_ec91551072e4b0bfc24fc89eef6c94428c181094d609b8cdc3bd293375e49a5e->leave($__internal_ec91551072e4b0bfc24fc89eef6c94428c181094d609b8cdc3bd293375e49a5e_prof);
 
     }
 
@@ -615,7 +615,7 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 /* */
 /*                 <h3>Nos promotions</h3>*/
 /*                 <div class="carrousel" id="big_carrousel">*/
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
@@ -626,77 +626,77 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 /*                         </div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                         <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                         <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /* */
-/*                     <div class="lol">*/
+/*                     <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/02.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
@@ -717,21 +717,21 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 /* */
 /*                 <h3>Top 3 des ventes</h3>*/
 /*                 */
-/*                      <div class="lol">*/
+/*                      <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /*                         */
-/*                          <div class="lol">*/
+/*                          <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /*                         */
-/*                          <div class="lol">*/
+/*                          <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
@@ -750,21 +750,21 @@ class __TwigTemplate_d9ef3747c102b09d0fc77216d382afdccf8f91a13f10cad457a2ac6b5fb
 /*                 <h3>Nouveautés</h3>*/
 /*               */
 /*                    */
-/*                      <div class="lol">*/
+/*                      <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /*                         */
-/*                          <div class="lol">*/
+/*                          <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
 /*                          <div class="info">info</div>*/
 /*                     </div>*/
 /*                         */
-/*                          <div class="lol">*/
+/*                          <div class="vignette">*/
 /*                         <a href="#">*/
 /*                             <img src="{{ asset('bundles/voyage/images/01.jpg') }}" alt="basketball" width="140" height="140" />*/
 /*                         </a>*/
